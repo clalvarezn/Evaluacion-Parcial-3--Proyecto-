@@ -1,0 +1,42 @@
+2026-06-28T16:43:15.552-04:00  INFO 8000 --- [producto-service] [restartedMain] c.l.p.ProductoServiceApplication         : Starting ProductoServiceApplication using Java 25.0.3 with PID 8000 (C:\Users\claud\Downloads\Entregables v2\producto-service\producto-service\target\classes started by claud in C:\Users\claud\Downloads\Entregables v2\producto-service)
+2026-06-28T16:43:15.554-04:00  INFO 8000 --- [producto-service] [restartedMain] c.l.p.ProductoServiceApplication         : The following 1 profile is active: "dev"
+2026-06-28T16:43:15.588-04:00  INFO 8000 --- [producto-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-28T16:43:15.589-04:00  INFO 8000 --- [producto-service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-28T16:43:16.167-04:00  INFO 8000 --- [producto-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-28T16:43:16.278-04:00  INFO 8000 --- [producto-service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 1 JPA repository interface.
+2026-06-28T16:43:16.693-04:00  INFO 8000 --- [producto-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-06-28T16:43:16.703-04:00  INFO 8000 --- [producto-service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-28T16:43:16.703-04:00  INFO 8000 --- [producto-service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-06-28T16:43:16.746-04:00  INFO 8000 --- [producto-service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-28T16:43:16.746-04:00  INFO 8000 --- [producto-service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1157 ms
+2026-06-28T16:43:16.938-04:00  INFO 8000 --- [producto-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-28T16:43:17.187-04:00  INFO 8000 --- [producto-service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4094dfb9
+2026-06-28T16:43:17.188-04:00  INFO 8000 --- [producto-service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-28T16:43:17.222-04:00  INFO 8000 --- [producto-service] [restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/db_lovable_dev (MySQL 8.4)
+2026-06-28T16:43:17.232-04:00  WARN 8000 --- [producto-service] [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+2026-06-28T16:43:17.261-04:00  INFO 8000 --- [producto-service] [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.021s)
+2026-06-28T16:43:17.277-04:00  INFO 8000 --- [producto-service] [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `db_lovable_dev`: 1
+2026-06-28T16:43:17.279-04:00  INFO 8000 --- [producto-service] [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `db_lovable_dev` is up to date. No migration necessary.
+2026-06-28T16:43:17.339-04:00  INFO 8000 --- [producto-service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-28T16:43:17.378-04:00  INFO 8000 --- [producto-service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-06-28T16:43:17.409-04:00  INFO 8000 --- [producto-service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-28T16:43:17.615-04:00  INFO 8000 --- [producto-service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-28T16:43:17.680-04:00  INFO 8000 --- [producto-service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-28T16:43:18.265-04:00  INFO 8000 --- [producto-service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-28T16:43:18.298-04:00  INFO 8000 --- [producto-service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-28T16:43:18.540-04:00  WARN 8000 --- [producto-service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-28T16:43:18.827-04:00  INFO 8000 --- [producto-service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-06-28T16:43:18.887-04:00  INFO 8000 --- [producto-service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-06-28T16:43:18.894-04:00  INFO 8000 --- [producto-service] [restartedMain] c.l.p.ProductoServiceApplication         : Started ProductoServiceApplication in 3.697 seconds (process running for 4.224)
+2026-06-28T16:57:28.970-04:00  INFO 8000 --- [producto-service] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-28T16:57:28.979-04:00  INFO 8000 --- [producto-service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-06-28T16:57:29.000-04:00  INFO 8000 --- [producto-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-28T16:57:29.003-04:00  INFO 8000 --- [producto-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-28T16:57:29.009-04:00  INFO 8000 --- [producto-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

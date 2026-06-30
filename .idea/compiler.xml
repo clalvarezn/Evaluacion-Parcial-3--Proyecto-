@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pedido-service" />
+        <module name="api-gateway-lovable" />
+        <module name="eureka-discovery-server" />
+      </profile>
+      <profile name="Annotation profile for envio" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.34/lombok-1.18.34.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.34/lombok-1.18.34.jar" />
+        </processorPath>
+        <module name="envio" />
+      </profile>
+      <profile name="Annotation profile for usuario" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.34/lombok-1.18.34.jar" />
+        </processorPath>
+        <module name="pago-service" />
+        <module name="usuario" />
+        <module name="boleta-service" />
+        <module name="producto-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka_server" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-gateway-lovable" options="-parameters" />
+      <module name="boleta-service" options="-parameters" />
+      <module name="envio" options="-parameters" />
+      <module name="eureka-discovery-server" options="-parameters" />
+      <module name="eureka_server" options="-parameters" />
+      <module name="pago-service" options="-parameters" />
+      <module name="pedido-service" options="-parameters" />
+      <module name="producto-service" options="-parameters" />
+      <module name="usuario" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,35 @@
+2026-06-28T23:02:25.458-04:00  INFO 24864 --- [pago-service] [main] c.l.p.PagoServiceApplicationTests        : Starting PagoServiceApplicationTests using Java 21.0.9 with PID 24864 (started by 5420 in G:\Mi unidad\DUOC Ingenieria Informatica\3er Semestre\Fullstack\Evaluacion Parcial 2 (Proyecto)\pago-service)
+2026-06-28T23:02:25.461-04:00 DEBUG 24864 --- [pago-service] [main] c.l.p.PagoServiceApplicationTests        : Running with Spring Boot v3.4.2, Spring v6.2.2
+2026-06-28T23:02:25.462-04:00  INFO 24864 --- [pago-service] [main] c.l.p.PagoServiceApplicationTests        : The following 1 profile is active: "dev"
+2026-06-28T23:02:26.997-04:00  INFO 24864 --- [pago-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-28T23:02:27.262-04:00  INFO 24864 --- [pago-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 245 ms. Found 1 JPA repository interface.
+2026-06-28T23:02:28.227-04:00  INFO 24864 --- [pago-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-28T23:02:28.803-04:00  INFO 24864 --- [pago-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a5e8260
+2026-06-28T23:02:28.806-04:00  INFO 24864 --- [pago-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-28T23:02:28.905-04:00  INFO 24864 --- [pago-service] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/db_pago_service_dev (MySQL 8.4)
+2026-06-28T23:02:28.930-04:00  WARN 24864 --- [pago-service] [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+2026-06-28T23:02:29.002-04:00  INFO 24864 --- [pago-service] [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.051s)
+2026-06-28T23:02:29.023-04:00  INFO 24864 --- [pago-service] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `db_pago_service_dev`: 1
+2026-06-28T23:02:29.028-04:00  INFO 24864 --- [pago-service] [main] o.f.core.internal.command.DbMigrate      : Schema `db_pago_service_dev` is up to date. No migration necessary.
+2026-06-28T23:02:29.223-04:00  INFO 24864 --- [pago-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-28T23:02:29.393-04:00  INFO 24864 --- [pago-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2026-06-28T23:02:29.480-04:00  INFO 24864 --- [pago-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-28T23:02:29.972-04:00  INFO 24864 --- [pago-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-28T23:02:30.122-04:00  INFO 24864 --- [pago-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-28T23:02:31.402-04:00  INFO 24864 --- [pago-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-28T23:02:31.470-04:00  INFO 24864 --- [pago-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-28T23:02:32.428-04:00  WARN 24864 --- [pago-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-28T23:02:33.126-04:00  INFO 24864 --- [pago-service] [main] c.l.p.PagoServiceApplicationTests        : Started PagoServiceApplicationTests in 8.127 seconds (process running for 9.467)
+2026-06-28T23:02:34.261-04:00  INFO 24864 --- [pago-service] [main] c.l.pago_service.service.PagoService     : Procesando pago para el pedido: 1
+2026-06-28T23:02:34.269-04:00  INFO 24864 --- [pago-service] [main] c.l.pago_service.service.PagoService     : Pago registrado correctamente con ID: null
+2026-06-28T23:02:34.270-04:00  INFO 24864 --- [pago-service] [main] c.l.pago_service.service.PagoService     : Estado del pedido actualizado a PAGADO: 1
+2026-06-28T23:02:34.409-04:00  INFO 24864 --- [pago-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-28T23:02:34.418-04:00  INFO 24864 --- [pago-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-28T23:02:34.435-04:00  INFO 24864 --- [pago-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

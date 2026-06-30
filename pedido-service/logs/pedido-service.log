@@ -1,0 +1,40 @@
+2026-06-28T19:16:26.569-04:00  INFO 123736 --- [pedido-service] [main] c.l.p.PedidoServiceApplicationTests      : Starting PedidoServiceApplicationTests using Java 21.0.9 with PID 123736 (started by 5420 in G:\Mi unidad\DUOC Ingenieria Informatica\3er Semestre\Fullstack\Evaluacion Parcial 2 (Proyecto)\pedido-service)
+2026-06-28T19:16:26.572-04:00 DEBUG 123736 --- [pedido-service] [main] c.l.p.PedidoServiceApplicationTests      : Running with Spring Boot v3.4.2, Spring v6.2.2
+2026-06-28T19:16:26.573-04:00  INFO 123736 --- [pedido-service] [main] c.l.p.PedidoServiceApplicationTests      : The following 1 profile is active: "dev"
+2026-06-28T19:16:28.006-04:00  INFO 123736 --- [pedido-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-28T19:16:28.301-04:00  INFO 123736 --- [pedido-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 274 ms. Found 2 JPA repository interfaces.
+2026-06-28T19:16:29.232-04:00  INFO 123736 --- [pedido-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-28T19:16:29.696-04:00  INFO 123736 --- [pedido-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23396fc0
+2026-06-28T19:16:29.699-04:00  INFO 123736 --- [pedido-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-28T19:16:29.771-04:00  INFO 123736 --- [pedido-service] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/db_pedido_service_dev (MySQL 8.4)
+2026-06-28T19:16:29.790-04:00  WARN 123736 --- [pedido-service] [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: MySQL 8.4 is newer than this version of Flyway and support has not been tested. The latest supported version of MySQL is 8.1.
+2026-06-28T19:16:29.856-04:00  INFO 123736 --- [pedido-service] [main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.051s)
+2026-06-28T19:16:29.882-04:00  INFO 123736 --- [pedido-service] [main] o.f.core.internal.command.DbMigrate      : Current version of schema `db_pedido_service_dev`: 1
+2026-06-28T19:16:29.887-04:00  INFO 123736 --- [pedido-service] [main] o.f.core.internal.command.DbMigrate      : Schema `db_pedido_service_dev` is up to date. No migration necessary.
+2026-06-28T19:16:30.092-04:00  INFO 123736 --- [pedido-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-28T19:16:30.257-04:00  INFO 123736 --- [pedido-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2026-06-28T19:16:30.334-04:00  INFO 123736 --- [pedido-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-28T19:16:30.827-04:00  INFO 123736 --- [pedido-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-28T19:16:30.969-04:00  INFO 123736 --- [pedido-service] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-28T19:16:32.451-04:00  INFO 123736 --- [pedido-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-28T19:16:32.498-04:00  INFO 123736 --- [pedido-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-28T19:16:32.504-04:00  INFO 123736 --- [pedido-service] [main] c.l.p.PedidoServiceApplication           : ARCHIVO DE LOG FUNCIONANDO ✅
+2026-06-28T19:16:33.709-04:00  WARN 123736 --- [pedido-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-28T19:16:34.337-04:00  INFO 123736 --- [pedido-service] [main] c.l.p.PedidoServiceApplicationTests      : Started PedidoServiceApplicationTests in 8.204 seconds (process running for 9.515)
+2026-06-28T19:16:35.419-04:00  INFO 123736 --- [pedido-service] [main] c.l.p.service.PedidoService              : Intentando eliminar pedido: 1
+2026-06-28T19:16:35.429-04:00  INFO 123736 --- [pedido-service] [main] c.l.p.service.PedidoService              : Pedido eliminado correctamente: 1
+2026-06-28T19:16:35.481-04:00  INFO 123736 --- [pedido-service] [main] c.l.p.service.PedidoService              : Creando pedido para el usuario: 1
+2026-06-28T19:16:35.508-04:00  INFO 123736 --- [pedido-service] [main] c.l.p.service.PedidoService              : Creando pedido para el usuario: 1
+2026-06-28T19:16:35.510-04:00 ERROR 123736 --- [pedido-service] [main] c.l.p.service.PedidoService              : Usuario no existe: 1
+2026-06-28T19:16:35.523-04:00  INFO 123736 --- [pedido-service] [main] c.l.p.service.PedidoService              : Intentando eliminar pedido: 1
+2026-06-28T19:16:35.524-04:00  WARN 123736 --- [pedido-service] [main] c.l.p.service.PedidoService              : No se puede eliminar pedido PAGADO: 1
+2026-06-28T19:16:35.686-04:00  INFO 123736 --- [pedido-service] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-28T19:16:35.693-04:00  INFO 123736 --- [pedido-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-28T19:16:35.709-04:00  INFO 123736 --- [pedido-service] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

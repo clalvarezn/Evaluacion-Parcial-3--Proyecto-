@@ -1,0 +1,106 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway-lovable
+
+  cloud:
+    gateway:
+
+      # Eureka Discovery
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+
+      routes:
+
+        # ===============================
+        # PRODUCTO
+        # ===============================
+        - id: producto-service
+          uri: lb://producto-service
+          predicates:
+            - Path=/api/v1/productos/**,/producto/**
+          filters:
+            - RewritePath=/producto/(?<segment>.*), /${segment}
+
+        # ===============================
+        # PAGO
+        # ===============================
+        - id: pago-service
+          uri: lb://pago-service
+          predicates:
+            - Path=/api/v1/pagos/**,/pago/**
+          filters:
+            - RewritePath=/pago/(?<segment>.*), /${segment}
+
+        # ===============================
+        # BOLETA
+        # ===============================
+        - id: boleta-service
+          uri: lb://boleta-service
+          predicates:
+            - Path=/api/v1/boletas/**,/boleta/**
+          filters:
+            - RewritePath=/boleta/(?<segment>.*), /${segment}
+
+        # ===============================
+        # ENVIO
+        # ===============================
+        - id: envio-service
+          uri: lb://envio-service
+          predicates:
+            - Path=/api/v1/envios/**,/envio/**
+          filters:
+            - RewritePath=/envio/(?<segment>.*), /${segment}
+
+        # ===============================
+        # PEDIDO
+        # ===============================
+        - id: pedido-service
+          uri: lb://pedido-service
+          predicates:
+            - Path=/api/v1/pedidos/**,/pedido/**
+          filters:
+            - RewritePath=/pedido/(?<segment>.*), /${segment}
+
+        # ===============================
+        # USUARIO
+        # ===============================
+        - id: usuario-service
+          uri: lb://usuario-service
+          predicates:
+            - Path=/api/v1/usuarios/**,/usuario/**
+          filters:
+            - RewritePath=/usuario/(?<segment>.*), /${segment}
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+# Swagger centralido
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+    urls:
+      - name: Usuario Service
+        url: /usuario/v3/api-docs
+
+      - name: Producto Service
+        url: /producto/v3/api-docs
+
+      - name: Pedido Service
+        url: /pedido/v3/api-docs
+
+      - name: Pago Service
+        url: /pago/v3/api-docs
+
+      - name: Boleta Service
+        url: /boleta/v3/api-docs
+
+      - name: Envio Service
+        url: /envio/v3/api-docs
